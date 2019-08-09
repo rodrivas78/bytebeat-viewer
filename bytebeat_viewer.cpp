@@ -41,11 +41,10 @@ glColor3f(1.0, 0.0, 0.0);
 		//c=putchar(k*(42&k>>10));
 		//c=putchar(k*(((k>>12)|(k>>8))&(63&(k>>4))))*2;
 		//c=putchar(k&k>>8)*2;  //Triangulo de Sirpinski
-		//c=putchar(sin(k)-(k&k>>7))*2;  //Fractal invertido
+		//c=putchar(sin(k)-(k&k>>7))*2;  
 		//c=putchar(k*9&k>>4|k*5&k>>7|k*3&k/1024)*2;
 		//c=putchar(((k>>9))&((k>>1))|(1|(49&k<<2))&(k<<1))*2;
-		//c=putchar((k>>(k>>5*(k>>13)%8))|(k>>4));
-		
+		//c=putchar((k>>(k>>5*(k>>13)%8))|(k>>4));		
 		
 	glColor3f(0.5, 0.4, 1.0); //blue 
 	glPointSize(1);
@@ -53,8 +52,7 @@ glColor3f(1.0, 0.0, 0.0);
 	
 	glColor3f(2.1, 3.0, 0.0); //yellow
 	glBegin(GL_POINTS);
-    glVertex2f(k/30,c+400);
-
+        glVertex2f(k/30,c+400);		
     } 
 	glScalef(zoom, zoom, 1.0f);	
 	
@@ -112,7 +110,6 @@ void mouseClick(int btn, int state, int x, int y) {
     glLoadIdentity();
 	gluOrtho2D(0.0, 3000.0*zoom, 0.0, 3000.0*zoom); //Define a origem dos espaços e o tamanho de cada célula
 }
-
 
 int main(int iArgc, char** cppArgv) {
 	glutInit(&iArgc, cppArgv);
