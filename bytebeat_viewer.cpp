@@ -33,12 +33,12 @@ glColor3f(1.0, 0.0, 0.0);
 	{				
 		// Some interesting Bytebeats "formulas"
 		// I put a '*2' at the end of some just to scale the images better. 
-
+		
+		c=putchar((k*5&k>>7)|(k*3&k>>10))*2; 
 		//c=putchar(k&k>>3|k>2);
 		//c=putchar(k*(((k>>12)|(k>>8))&(63&(k>>4))))*2;  
 		//c=putchar(k*(42&k>>10))*2;   //42 melody
 		//c=putchar(k*(42&k>>10));
-		c=putchar((k*5&k>>7)|(k*3&k>>10))*2; 
 		//c=putchar(k*(((k>>12)|(k>>8))&(63&(k>>4))))*2;
 		//c=putchar(k&k>>8)*2;  //Triangulo de Sirpinski
 		//c=putchar(sin(k)-(k&k>>7))*2;  //Fractal invertido
@@ -56,7 +56,6 @@ glColor3f(1.0, 0.0, 0.0);
     glVertex2f(k/30,c+400);
 
     } 
-
 	glScalef(zoom, zoom, 1.0f);	
 	
 glEnd();  
