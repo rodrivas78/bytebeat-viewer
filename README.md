@@ -1,5 +1,5 @@
  
- Bytebeat Viewer  by  Rodrigo G. (rodrivas78)
+ Bytebeat Viewer  by  rodrivas78
  
  This application generate visualizations for "bytebeats" ("one liners"  
  or small programs that produce interesting sound and musical results). When plotted, many of 
