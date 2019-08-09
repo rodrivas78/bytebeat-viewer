@@ -1,5 +1,6 @@
  
- Bytebeat Viewer  -by  Rodrigo G. (rodrivas78)
+ Bytebeat Viewer  by  Rodrigo G. (rodrivas78)
+ 
  This application aims to generate visualizations for "bytebeats" ("one liners"  
  or small programs that produce interesting sound and musical results). When plotted, many of 
 them result in fractals. So I thought it appropriate to call them "sound fractals" too. For more 
